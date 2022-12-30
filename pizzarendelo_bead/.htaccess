@@ -1,0 +1,24 @@
+RewriteEngine on
+
+RewriteRule product_list$ index.php?page=product_list
+RewriteRule products/([a-zA-Z0-9-]+)$ index.php?page=product&name=$1
+RewriteRule contact$ index.php?page=contact
+RewriteRule shopping-cart$ index.php?page=shopping_cart
+RewriteRule checkout$ index.php?page=checkout
+RewriteRule order-completed$ index.php?page=order-completed
+RewriteRule registration$ index.php?page=registration
+RewriteRule login$ index.php?page=login
+RewriteRule logout$ index.php?page=logout
+RewriteRule profile$ index.php?page=profile
+RewriteRule orders$ index.php?page=orders
+RewriteRule account$ index.php?page=account
+RewriteRule system_admin$ system_admin.php?page=login
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule system_admin/userdata/(.*)$ system_admin.php?page=userdata&id=$1
+RewriteRule system_admin/order-details/(.*)$ system_admin.php?page=order-details&id=$1
+RewriteRule system_admin/(.*)$ system_admin.php?page=$1
+RewriteRule sytem_admin/dashboard$ system_admin.php?page=dashboard
+

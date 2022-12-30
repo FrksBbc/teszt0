@@ -1,0 +1,320 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body {
+ 
+
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.text-block {
+  padding: 0px 20px !important;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.alpha-bg {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+.alpha-bg * {
+  color: white;
+}
+
+.img-holder {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.price {
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.limited-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.pagination-holder {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.pagination li a {
+  color: white;
+}
+
+.quantity-input {
+  margin: 0;
+  min-width: 40px !important;
+}
+
+.shopping-cart {
+  font-size: 24px !important;
+  margin-top: 13px !important;
+}
+
+.product-details img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-details .btn {
+  width: 100px;
+}
+
+.browser-default {
+  padding-left: 18px;
+}
+
+@media(max-width: 400px) {
+  .product-details .btn {
+    width: 100px;
+    margin: 5px;
+  }
+}
+
+.orange-text span {
+  color: white;
+}
+
+.mt3 {
+  margin-top: 20px;
+}
+
+.contact {
+  width: 100%;
+}
+
+.cart>.col>.img-holder {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.cart.delete,
+.cart.s2.price,
+.text-right {
+  text-align: right;
+
+}
+
+.text-right {
+  display: initial !important;
+  font-size: 120%;
+}
+
+.cart .col {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  border-bottom: 1px solid #ffffff40;
+  padding-bottom: 20px;
+}
+
+.total a {
+  margin-top: 20px;
+}
+
+.total .col {
+  border-bottom: 0px;
+}
+
+.checkoutbtns a {
+  margin: 5px;
+  min-width: 280px;
+}
+
+#ajax-cart {
+  background: #fff;
+  width: 230px;
+  padding: 15px 10px 0px 10px;
+  position: absolute;
+  margin-left: -175px;
+  display: none;
+  color: black;
+}
+
+#ajax-cart .ajax-cart-content,
+.ajax-cart-price {
+  line-height: 100% !important;
+}
+
+.ajax-cart-content,
+.ajax-cart-price {
+  width: 100%;
+  border-bottom: 1px dotted grey;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+#ajax-cart .ajax-cart-price {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+  line-height: 150% !important;
+
+
+}
+
+.ajax-cart-content:last-child {
+  border-bottom: 1px solid grey;
+}
+
+.ajax-cart-small-image {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 5px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.noborder {
+  border: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.errormessage {
+  position: absolute;
+  display: block;
+}
+
+.hideable {
+  display: none;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.profile-btn,
+.alert-btn {
+  min-width: 180px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+.small-container {
+  width: 40%;
+}
+
+@media(max-width: 700px) {
+  .small-container {
+    width: 90%;
+  }
+
+
+}
+
+@media(max-width: 1000px) {
+  h1 {
+    font-size: 25px !important;
+  }
+}
+
+.order-heading {
+  border: 1px solid grey;
+  padding: 5px;
+  font-weight: bold;
+  display: flex;
+
+
+}
+
+.order-heading div {
+  flex: 1;
+}
+
+.order-heading div:last-child {
+  text-align: right;
+}
+
+.order-item {
+  display: flex;
+}
+
+.order-item div {
+  flex: 1;
+}
+
+.order-item div:first-child {
+  flex: 4;
+}
+
+.order-item div:last-child {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.order-item div:nth-child(4) {
+  text-align: center;
+}
+
+.order-item small {
+  display: block;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+@media(max-width:900px) {
+
+  .order-item,
+  .order-heading {
+    flex-direction: column;
+  }
+
+  .order-item div,
+  .order-heading div {
+    width: 100%;
+    text-align: left !important;
+  }
+
+  .order-item {
+    margin-bottom: 20px;
+  }
+
+}
+
+.order-item {
+  margin-bottom: 10px;
+}
+
+.bg-success{
+  background:green;
+}
+
+.fw-normal{
+  font-weight: normal!important;
+}
